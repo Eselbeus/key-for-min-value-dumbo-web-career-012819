@@ -15,6 +15,8 @@ def key_for_min_value(name_hash)
     lowest = valueArr.collect do |num|
       if compareVal < num
         name
+      else
+        next
       end
     end
   end
