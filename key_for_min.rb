@@ -3,18 +3,10 @@
 require = "pry"
 def key_for_min_value(name_hash)
   name_arr = []
-  valueArr = []
+  values = []
   name_hash.each do |name, value|
-    if value > name_arr[-1]
-      name_arr.push(name)
-    elsif value < name_arr[0]
-      name_arr.unshift(name)
-    end
-    
+    values.push(value)
     end
   end
-  # if name_arr.length == 1 
-  #   return nil 
-  # end
   return lowest
 end
