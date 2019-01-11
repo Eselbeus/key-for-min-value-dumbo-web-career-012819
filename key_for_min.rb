@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
   end
   ind = 0 
   while ind < values.length - 1
-    if num < num[ind + 1]
+    if values[ind] < values[ind + 1]
       values[ind], values[ind +1] = values[ind + 1], values[ind]
     end
     ind += 1
