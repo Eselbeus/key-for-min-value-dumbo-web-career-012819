@@ -8,10 +8,12 @@ def key_for_min_value(name_hash)
   if values.length == 0 
     return nil 
   end
-  values.collect.with_index do |num, ind|
+  ind = 0 
+  while ind < values.length - 1
     if num < num[ind + 1]
       values[ind], values[ind +1] = values[ind + 1], values[ind]
     end
+    ind += 1
   end
   name_hash.each do |name, value|
     if value == values[-1]
