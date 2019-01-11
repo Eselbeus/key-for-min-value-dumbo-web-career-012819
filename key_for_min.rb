@@ -13,7 +13,7 @@ def key_for_min_value(name_hash)
     valueArr.push(value)
     compareVal = value
     lowest = valueArr.collect do |num|
-      if value < num
+      if compareVal < num
         name
       end
     end
