@@ -16,7 +16,7 @@ def key_for_min_value(name_hash)
       if compareVal < num
         name
       else
-        next
+        nil
       end
     end
   end
